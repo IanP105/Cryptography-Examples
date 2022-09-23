@@ -78,6 +78,12 @@ public class Main {
             // Driver code
             public static void main(String[] args)
             {
+                // Please check the assignment description. 
+                // (1) You need to modify this such that you can generate random keys and write them into a file.
+                // (2) You need to read the content of a given file as input and encrypt it.
+                // (3) You need to read the content of the encrypted file and decrypt it. 
+                // Each of these operations should be executable seperately.
+                
                 String Str = "GEEKSFORGEEKS";
                 String Keyword = "AYUSH";
 
