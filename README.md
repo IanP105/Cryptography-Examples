@@ -1,4 +1,4 @@
-#CSC-475 Programming Assignments
+# CSC-475 Programming Assignments
 
 ## Assignment-1-Vigenere-Cipher
 
