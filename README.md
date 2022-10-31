@@ -9,3 +9,7 @@ Lastly, the user will repeat the above process for decryption.
 ## Assignment-2-PRNG-Stream-Cipher
 
 This program will...
+
+## Assignment-4-Euclid-Algorithm
+
+This program will find the GCD of two numbers and display the calculations used to reach the result.
