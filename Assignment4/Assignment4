@@ -1,0 +1,25 @@
+def GCD(a,b):
+    x = a
+    y = b
+    if a < b:
+        swap(a,b)
+    i = 0
+    while n != 0:
+        r = m % n
+        q = m // n
+        PRINTROW
+        UPDATECOUNTER
+        m = n
+        n = r
+        if n = 0:
+            m = 1
+            q = ""
+            r = "STOP"
+            PRINTFINALROWUSINGTHESEVARIABLES
+    return SOMETHING
+    
+    # Driver code starts here.
+    PRINTTABLEHEADER
+    m = #Put your number here
+    n = #Same
+    divider, dividend, gcd = GCD(a,b)
