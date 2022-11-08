@@ -1,8 +1,8 @@
-def GCD(a,b):
-    x = a
-    y = b
-    if a < b:
-        swap(a,b)
+def GCD(m,n):
+    x = m
+    y = n
+    if m < n:
+        swap(m,n)
     i = 0
     while n != 0:
         r = m % n
@@ -18,9 +18,9 @@ def GCD(a,b):
             print(f"{f'{i}' : <5}{f'{q}' : ^10}{f'{m}' : ^10}{f'{n}' : ^10}{f'{r}' : >5}")
     return x,y,m
     
-    # Driver code starts here.
-    print(f"{'i' : <5}{'q' : ^10}{'m' : ^10}{'n' : ^10}{'r' : >5}")
-    m = 250
-    n = 111
+# Driver code starts here.
+print(f"{'i' : <5}{'q' : ^10}{'m' : ^10}{'n' : ^10}{'r' : >5}")
+a = 250
+b = 111
 divider, dividend, gcd = GCD(a,b)
-print("the actual gcd here, final result")
+print("The final GCD is: ",gcd)
