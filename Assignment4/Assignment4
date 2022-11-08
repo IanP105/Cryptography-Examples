@@ -1,5 +1,3 @@
-# I ran out of time to finish this on Friday, but will work on it as soon as possible on Saturday.
-
 def GCD(a,b):
     x = a
     y = b
@@ -9,19 +7,20 @@ def GCD(a,b):
     while n != 0:
         r = m % n
         q = m // n
-        PRINTROW
-        UPDATECOUNTER
+        print(f"{f'{i}' : <5}{f'{q}' : ^10}{f'{m}' : ^10}{f'{n}' : ^10}{f'{r}' : >5}")
+        i = i + 1
         m = n
         n = r
-        if n = 0:
+        if n == 0:
             m = 1
             q = ""
             r = "STOP"
-            PRINTFINALROWUSINGTHESEVARIABLES
-    return SOMETHING
+            print(f"{f'{i}' : <5}{f'{q}' : ^10}{f'{m}' : ^10}{f'{n}' : ^10}{f'{r}' : >5}")
+    return x,y,m
     
     # Driver code starts here.
-    PRINTTABLEHEADER
-    m = # User puts the first number here.
-    n = # User puts the second number here.
-    divider, dividend, gcd = GCD(a,b)
+    print(f"{'i' : <5}{'q' : ^10}{'m' : ^10}{'n' : ^10}{'r' : >5}")
+    m = 250
+    n = 111
+divider, dividend, gcd = GCD(a,b)
+print("the actual gcd here, final result")
