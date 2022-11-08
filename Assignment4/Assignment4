@@ -20,7 +20,6 @@ def GCD(m,n):
     
 # Driver code starts here.
 print(f"{'i' : <5}{'q' : ^10}{'m' : ^10}{'n' : ^10}{'r' : >5}")
-a = 250
-b = 111
+a =
+b =
 divider, dividend, gcd = GCD(a,b)
-print("The final GCD is: ",gcd)
