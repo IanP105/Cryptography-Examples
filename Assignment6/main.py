@@ -1,4 +1,6 @@
 def expMod(x, e, n):
+    m = 0
+
     y = x
     for i in range(m - 2, 0):
         y = (y * y) % n
@@ -7,45 +9,17 @@ def expMod(x, e, n):
     return y
 
 
-m = 0
-
-
-
-
-
-
-# ALTERNATE ATTEMPT 1
-# def expTest1(a, e_power2, mod):
-#     for i in range (0, e_power2):
-#         a = (a * a) % mod
-#     return a
-
-
-
-
-
-
-# ALTERNATE ATTEMPT 2
-# # Prime modulo value
-# N = 1000000007
-#
-#
-# def expTest2(bas, exp):
-#     t = 1
-#     while (exp > 0):
-#
-#         # For non-even exponents
-#         if (exp % 2 != 0):
-#             t = (t * bas) % N
-#
-#         bas = (bas * bas) % N
-#         exp = int(exp / 2)
-#     return t % N
-#
-#
-# # Driver Code
-# bas = 5
-# exp = 100000
-#
-# modulo = expTest2(bas, exp)
-# print(modulo)
+def PriTst(x, a, n):
+    k = 0
+    y = 1
+    for i == k:
+        z = y
+        y = (y * y) % n
+        if y == 1 ** z != 1 ** z != (n-1):
+            print("n is not prime")
+        if x == 1:
+            y = y * a % n
+    if y != 1:
+        print("n is not prime")
+    else:
+        print("n may be prime")
