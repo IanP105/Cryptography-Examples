@@ -1,3 +1,9 @@
+# Check if random numbers are prime
+
+# Needs to print a table
+# Needs to take in value from "GenRand" file
+
+
 def expMod(x, e, n):
     m = 0
 
@@ -26,3 +32,7 @@ def PriTst(x, a, n):
 
 
 PriTst(17, 22, 17)
+
+# Example of table printing
+# print(f"{f'{m}' : <5}{f'{y}' : ^10}{f'{x}' : ^10}{f'{e}' : ^10}{f'{n}' : >5}")
+# print(f"{f'{k}' : <5}{f'{y}' : ^10}{f'{z}' : ^10}{f'{a}' : ^10}{f'{n}' : >5}")

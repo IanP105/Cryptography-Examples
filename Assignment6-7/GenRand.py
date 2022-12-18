@@ -1,37 +1,53 @@
-# Use a helper function that takes in an integer and how many bytes long you want it to be, then gives a string binary representation for the part that X - look this up online
+# Generate the random numbers
+
 
 import random
 
-def bin_string(int_val, bit_length):
-    i = 1 << bit_length - 1
-    binary_string = ''
+def generate_random_number ():
+    count = 0
+    while count < 5:
+        baseRand = random.getrandbits(5)                                # Get random number of length 5 bits
+        print("Integer form: "),
+        print(baseRand)
+        print()
+        baseRand = format(baseRand, '05b')                              # Convert to binary, strip "0b", and retain all leading 0s
+        fullRand = "0000000000000000000000000" + "1" + baseRand + "1"   # Add all padding to random number
+        print("Binary form: "),
+        print(fullRand)
+        print()
+        count += 1                                                      # Increment counter
 
-    while 1 > 0:
-        if (int_val & i) != 0:
-            binary_string += '1'
-        else:
-            binary_string += '0'
-        i = i // 2
-
-    return binary_string
-
-def gen_bin_list(n):
-    binary_list = []
-
-    for i in range(n):
-        random_int = random.randint(0, 2 ** 32)
-        binary_string = bin_string(random_int, 32)
-        binary_list.append(binary_string)
-
-    return binary_string
+generate_random_number()
 
 
+# Begin unused implementation
 
+# def bin_string(int_val, bit_length):
+#     i = 1 << bit_length - 1
+#     binary_string = ''
+#
+#     while 1 > 0:
+#         if (int_val & i) != 0:
+#             binary_string += '1'
+#         else:
+#             binary_string += '0'
+#         i = i // 2
+#
+#         return binary_string
 
-def get_random_bit():
-    a = bin(random.randint(0, 2**32))
-    c = a [2:]
-    return c[-1]
+# def gen_bin_list(n):
+#     binary_list = []
+#
+#     for i in range(n):
+#         random_int = random.randint(0, 2 ** 32)
+#         binary_string = bin_string(random_int, 32)
+#         binary_list.append(binary_string)
+#
+#         return binary_string
 
-def generate_random_number (show_trace = False):
-    # X
+# def get_random_bit():
+#     a = bin(random.randint(0, 2**32))
+#     c = a [2:]
+#     return c[-1]
+
+# End unused implementation

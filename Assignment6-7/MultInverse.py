@@ -1,4 +1,13 @@
-# RSA_Extended_Euclid_Algorithm
+# Find the multiplicative inverse via extended euclidean algorithm
+
+# Needs to have "extended" code implemented
+
+
+def swap(a, b):
+    tmp = a
+    a = b
+    b = tmp
+    return a, b
 
 def GCD(m, n):
     x = m
@@ -21,8 +30,22 @@ def GCD(m, n):
     return x, y, m
 
 
+# Unimplemented example of extended euclidean
+# def extendedEuclideanAlgorithm(a,b):
+#     if a == 0:
+#         return b, 0, 1
+#     gcd, u, v = extendedEuclideanAlgorithm(b % a, a)
+#     x = v - (b // a ) * u
+#     y = u
+#     return gcd, x, y
+#
+# print(extendedEuclideanAlgorithm(10,25))
+#
+# #Output:
+# (5, -2, 1)
+
 # Driver code starts here.
 print(f"{'i' : <5}{'q' : ^10}{'m' : ^10}{'n' : ^10}{'r' : >5}")
-a =
-b =
+a = 4
+b = 16
 divider, dividend, gcd = GCD(a, b)

@@ -1,4 +1,9 @@
-z = '101010101'
+# Main driver for the program
+
+# Needs to take in values from other files
+
+
+z = '001001101'
 y = int(z, 2)
 t = int(0)
 
