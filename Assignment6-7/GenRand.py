@@ -4,18 +4,21 @@
 import random
 
 def generate_random_number ():
-    count = 0
-    while count < 5:
+    counter = 0
+    while counter < 5:
         baseRand = random.getrandbits(5)                                # Get random number of length 5 bits
         print("Integer form: "),
         print(baseRand)
         print()
         baseRand = format(baseRand, '05b')                              # Convert to binary, strip "0b", and retain all leading 0s
+        print("Binary form: ")
+        print(baseRand)
+        print()
         fullRand = "0000000000000000000000000" + "1" + baseRand + "1"   # Add all padding to random number
-        print("Binary form: "),
+        print("Full form: "),
         print(fullRand)
         print()
-        count += 1                                                      # Increment counter
+        counter += 1                                                      # Increment counter
 
 generate_random_number()
 

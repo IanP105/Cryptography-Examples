@@ -1,6 +1,7 @@
 # Find the multiplicative inverse via extended euclidean algorithm
 
 # Needs to have "extended" code implemented
+# Needs to take in value from "PrimeCheck" file
 
 
 def swap(a, b):
